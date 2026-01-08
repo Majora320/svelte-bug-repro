@@ -17,6 +17,9 @@ const config = {
 		experimental: {
 			async: true
 		}
+	},
+	output: {
+		bundleStrategy: 'single'
 	}
 };
 
