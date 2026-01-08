@@ -10,7 +10,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		experimental: {
-			remoteFunctions: true
+			remoteFunctions: false
 		}
 	},
 	compilerOptions: {
@@ -20,7 +20,8 @@ const config = {
 	},
 	output: {
 		bundleStrategy: 'single'
-	}
+	},
+	sourcemap: true
 };
 
 export default config;
