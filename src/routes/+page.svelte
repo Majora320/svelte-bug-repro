@@ -1,8 +1,7 @@
 <script lang="ts">
     import Component from "$lib/component.svelte";
-    import { getData } from "./data.remote";
+
+    const getData = () => Promise.resolve([1, 2, 3]);
 </script>
 
-<svelte:boundary>
-    <Component data={await getData()} />
-</svelte:boundary>
+<Component data={await getData()}/>
